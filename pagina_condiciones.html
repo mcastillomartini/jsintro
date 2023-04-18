@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title> Ejemplo de condiciones</title>
+</head>
+
+<body>
+    <script>
+        // entradas ¿que informacion tengo?
+        let estatura = prompt("Ingrese estatura");
+        let categoria = prompt("Ingrese categoria (A,B)");
+
+        // proceso
+        if (categoria == "B") {
+
+            if (estatura > 1.5) {
+                document.write("<h2>Si puede subir</h2>");
+            }
+            else {
+                document.write("<h2>no puede subir</h2>");
+            }
+
+        } // if de categoria
+        else{
+            document.write("<h2>Si puede subir al juego </h2>");
+        }
+
+    </script>
+</body>
+
+</html>
