@@ -1,0 +1,39 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            // si el dia dia es caluroso si la temperatura es mayor a 30 grados, el dia 
+            //es frio si la temperatura es menor
+            // a 15 grados, es normal si es mayor a 15 y menor a 30. 
+            //La temperatura no puede ser menor - 10 grados.
+
+            let temp = prompt("Ingrese temperatura ");
+            if (temp > 30)
+            {
+                document.write("<h3>Caluroso</h3>");
+            } 
+            else // si temperatura es menor o igual a 30 
+            {
+                if (temp > 15) 
+                {
+                    document.write("<h3>Normal</h3>")
+                }
+                else
+                {
+                    if (temp < -15)
+                    {
+                        document.write("<h3 style='color:red'>Error, temperatura inválida</h3>");
+                    }
+                    else
+                    {
+                        document.write("<h3>Frio</h3>");
+                    }
+                }
+
+            }
+
+        </script>   
+    </body>
+</html>

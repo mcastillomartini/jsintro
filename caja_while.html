@@ -1,0 +1,29 @@
+<html>
+<head>  </head>
+<body>
+    <script>
+        let nit = prompt("Ingrese nit");
+        document.write("Cliente: "+nit+"<br>");
+
+        let opcion = "si";
+
+        let subtotal = 0;
+        while (opcion == "si"){
+            //pedir un producto
+            let codigo = prompt("Ingrese código");
+            let cantidad = prompt("Ingrese cantidad");
+            let precio = prompt("Ingrese precio");
+            let preciototal = cantidad * precio;
+            subtotal = subtotal + preciototal;   
+            document.write(codigo+" cantidad: "+cantidad+" pu: "+precio+" precio total: "+preciototal+"<br>");
+            //preguntar al usuario
+            opcion = prompt("Desea agregar otro producto si/no");
+        }
+        
+        document.write("<h3> Total a pagar "+subtotal+"</h3>")
+        document.write("fin del programa")
+
+
+    </script>
+</body>
+</html>
