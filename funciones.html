@@ -1,0 +1,46 @@
+<html>
+
+<head></head>
+<body>
+    <script>
+
+        // definicion de procedimiento
+        function mostrarPar(){
+            let n = prompt("Ingrese un numero");
+            if (n % 2 == 0){
+                document.write("es par <br>");
+            }else{
+                document.write("no es par <br>");
+            }
+
+        } // fin del procedimiento
+
+        //definicion de funcion
+        function alCuadrado(){
+            let n = prompt("Ingrese un numero");
+            let val = n * n;
+            return val; // que tipo de dato devuelvo y que representa ese dato
+
+        }
+
+        // nombre de la funcion es parseInt
+        // devuelve un entero -Number
+        // el valor entero del string enviado de parametro
+        let num = 10;
+        num = parseInt("2");
+        num++;
+
+        // procedimiento por no devuelve valor
+        // nombre: log
+        // que hace? mostrar a pantalla 
+        console.log("num: "+num);
+        for (let i=0; i<num; i++){
+            mostrarPar(); //procedimiento
+        }
+
+        let res = alCuadrado(); // funcion
+        document.write("<h2>El numero al cuadrado es "+res+"</h2>");
+
+    </script>
+</body>
+</html>

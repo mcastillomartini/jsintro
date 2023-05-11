@@ -1,0 +1,46 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            //entradas = que informacion me van a dar? radio
+            // nombre de la funcion = que va a calcular?
+            // que devuelve? area
+            function calcularArea(radio){
+                const pi = 3.1416;
+                let area = pi*radio*radio;
+                return area;
+            }
+
+            function calcularCircunferencia(radio){
+                const pi = 3.1416;
+                let circun = 2 * pi * radio;
+                return circun;
+            }
+
+            function calcularFecha(dia, mes , anyo){
+                let fecha = dia+"/"+mes+"/"+anyo;
+                return fecha;
+            }
+
+            
+
+
+            let radio = prompt("Ingrese el radio");
+            let a = calcularArea(radio);
+            let c = calcularCircunferencia(radio);
+            document.write("Para el circulo con radio "+radio+"<br>");
+            document.write(" - El area es "+a+"<br>");
+            document.write(" - La circunferencia es "+c);
+            document.write("<hr>");
+            
+            let d = prompt("Ingrese dia");
+            let m = prompt("Ingrese mes ");
+            let aa = prompt("Ingrese año ");
+            document.write("<h3>"+calcularFecha(d,m,aa)+"</h3>");
+
+            
+        </script>
+    </body>
+</html>
