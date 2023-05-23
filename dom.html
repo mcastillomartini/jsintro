@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <div id="arriba">
+        <p id="parrafoA" >
+           
+        </p>
+    </div>
+    <div id="centro">
+        <p id="parrafoB">
+            <form id="test">
+                <input type="text" id="nombre" />
+
+            </form>
+        </p>
+    </div>
+    <div id="abajo">
+        <p id="parrafoC"></p>
+    </div>
+    <script>
+        var elem = document.getElementById("parrafoA");
+        elem.innerHTML = "<h2>titulo </h2>";
+        document.write(elem);
+
+        var parrafos = document.getElementsByTagName("p");
+        for (let i = 0; i < parrafos.length; i++) {
+            parrafos[i].style.color = "blue";
+        }
+        document.write("cantidad de parrafos " + parrafos.length);
+    </script>
+</body>
+
+</html>

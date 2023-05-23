@@ -1,0 +1,48 @@
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            /*let nombre1, nombre2, nombre3, nombre4, nombre5;
+            nombre1 = prompt("Ingrese nombre");
+            nombre2 = prompt("Ingrese nombre");
+            nombre3 = prompt("Ingrese nombre");
+            nombre4 = prompt("Ingrese nombre");
+            nombre5 = prompt("Ingrese nombre");
+            */
+            var nombres = new Array("Juan", "Maria", "Hugo", "Paco", "Luis","waco", "dot", "jako");
+            document.write("posicion 0 "+nombres[0]+"<br>");
+            document.write("tamaño del array: "+nombres.length+"<br>");
+            //document.write("Ultima posicion "+nombres[4]+"<br>");
+            document.write("Ultima posicion "+nombres[nombres.length-1]+"<br>");
+
+            document.write("<ol>");
+            for(let i=0; i<nombres.length;i++){
+                document.write("<li>"+nombres[i]+"</li>");
+            }
+            document.write("</ol>");
+        
+        
+            var toystory = ["Buzz", "Budy","Barbie","Ken","Rex"];
+            var todos = toystory.concat(nombres);
+            document.write("<ol>");
+            for (let i=0; i<todos.length; i++){
+                document.write("<li>"+todos[i].toUpperCase()+"</li>");
+            }
+            document.write("</ol>");
+        
+           
+            var carro = new Array();
+            carro["marca"] = "Nisssan";
+            carro["modelo"] = "2018";
+            carro["chasis"] = "Z1343434134343";
+
+
+
+
+            
+        </script>
+    </body>
+</html>
