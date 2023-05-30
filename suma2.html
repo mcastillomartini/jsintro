@@ -1,0 +1,26 @@
+<html>
+    <head>
+
+    </head>
+    <body id="elBody">
+        Numero 1 <input type="text" id="num1"/> +
+        Numero 2 <input type="text" id="num2"/> = 
+        <input type="text" id="resultado" disabled/>
+        <input type="button" value="sumar" id="sumarb" onclick="sumar()"/>
+    </body>
+    <script>
+        function sumar(){
+            let num1 = parseInt(document.getElementById("num1").value);
+            let num2 = parseInt(document.getElementById("num2").value);
+            let resultado = num1+num2;
+            document.getElementById("resultado").value=resultado;
+            let boton = document.getElementById("sumarb");
+            boton.addEventListener("mouseover", cambiarColor(),true);
+        }
+
+        function cambiarColor(){
+            document.getElementById("elBody").style.backgroundColor="lightgray";
+            alert("cambio de color");
+        }
+    </script>
+</html>

@@ -1,0 +1,48 @@
+<form onsubmit="return validate()" method="post">
+    Nombre: <input type="text" name="nombre" id="nombre" />
+    <br />
+    Edad: <input type="text" name="edad" id="edad" />
+    <br />
+    <input type="submit" value="Submit" id="aplicar" />
+  </form>
+
+
+  <div id="saludo"></div>
+
+<script>
+  function validate() {
+    var n1 = document.getElementById("nombre");
+    var n2 = document.getElementById("edad");
+    if(n1.value != "" && n2.value != "") {
+      var valNum = parseInt(n2.value);
+      alert(valNum);
+      //NaN = Not a Number
+      if (isNaN(valNum) == true ){
+        alert("Edad debe ser un numero");
+        return false;
+      }  
+      if (valNum < 18 ){
+        alert("debe ser mayor de edad");
+        return false;
+      }  
+
+
+      return true;
+    } else {
+        alert("No pueden ser campos vacios");
+        return false;
+    }
+  }
+
+</script>
+
+<script>
+    var btn = document.getElementById("aplicar");
+    btn.addEventListener("click", myFunction);
+    
+    function myFunction() {
+        var n1 = document.getElementById("nombre");
+        document.getElementById("saludo").innerHTML="Bienvenid@ "+n1.value;
+        alert("Haciendo el evento de myFunction");
+    }
+</script>

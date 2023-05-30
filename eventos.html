@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Eventos</title>
+    </head>
+    <body onload="cargando()">
+        <h1>Página de prueba de eventos</h1>
+        <input type="text" id="texto" onchange="cambio()" />
+        <input type="text" id="nombre" onchange="colorear()"/>
+    </body>
+    <script>
+        function cargando(){
+            alert("Cargando página");
+        }
+        function cambio(){
+            alert(document.getElementById("texto").value);
+        }
+        function colorear(){
+            document.getElementsByTagName("h1")[0].style.color=document.getElementById("nombre").value;
+        }
+    </script>
+</html>

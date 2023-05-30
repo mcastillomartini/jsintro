@@ -1,0 +1,21 @@
+
+
+<html>
+    <head>
+        <title>Confirmación de envío de formulario</title>
+    <script language="JavaScript">
+    function pregunta(){
+        if (confirm('¿Estas seguro de enviar este formulario?')){
+           document.tuformulario.submit()
+        }
+    }
+    </script>
+    </head>
+    
+    <body>
+    <form name=tuformulario action="mostrardatos.html">
+    <input type="text" name="cualquiercampo">
+    <input type=button onclick="pregunta()" value="Enviar">
+    </form>
+    
+    </body> 
