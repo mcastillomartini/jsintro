@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script src="usuario_db.js" ></script>
+    </head>
+    <body>
+        <form id="form1">
+            
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre"/> <br>
+            <label for="email">Correo electronico</label>
+            <input type="text" id="email"/> <br>
+            <label for="password">Password</label>
+            <input type="password" id="password"/> <br>
+            <input type="button" onclick="guardarDatos()" value="Guardar"/>
+        </form>
+        <h2>Usuarios existentes</h2>
+        <ul id="misUsuarios"></ul>
+
+    </body>
+</html>
